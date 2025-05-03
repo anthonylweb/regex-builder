@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regex Result</title>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Your own custom styles (optional) -->
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container py-5">
+ 
+  <div>
+    <h1 class="mb-4">Your Regular Expression:</h1>
+
+    <h3><%= regexPattern %></h3>
+
+    <% if (explanation) { %>
+
+          <p><%= explanation.replace(/\n/g, '<br>') %></p>
+          <br>
+          <p class="text-muted">Explanation provided above by the AI.</p>
+
+      <% } %>
+
+    <a href="/" class="btn btn-outline-primary" role="button">Back to Form</a>
+  </div>
+
+</body>
+</html>

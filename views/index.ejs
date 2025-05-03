@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Your own custom styles (optional) -->
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Regex</title>
+</head>
+<body>
+  <form action="/submit" method="POST">
+    
+    <div class="form-group">
+        <h1>Regex</h1>
+        <label>What do you need your regex to do?</label><br><br> 
+            <input type="text" class="form-control" name="regexrequest" required placeholder="Please describe what you would like your regular expression to do in as much detial as possible.">
+        
+            <input class="form-check-input" type="checkbox" name="includeExplanation" id="includeExplanation">
+            <label class="form-check-label" for="includeExplanation">
+              Include explanation of the regular expression?
+            </label>
+        <br><br>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
